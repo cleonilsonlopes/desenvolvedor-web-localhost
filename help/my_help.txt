@@ -1,0 +1,31 @@
+
+
+Frameworks
+    
+
+    html5 > bootstrap
+
+    Javascript > jquery
+
+    Plyr > Para trabalhar com vídeos no html5
+
+    PHP > Slim Framework
+        Source: https://github.com/slimphp/slim/tree/2.x
+        Onde colocar: na pasta inc do projeto
+        O index.php e o .htaccess do Framework vão para a home do projeto.
+        A linha require do index.php aponta onde está o slim.php: require 'inc/Slim-2.x/Slim/Slim.php';
+
+    Web server > Xampp instalar web server, mysql, php, wordpress, etc no PC
+
+MVC
+    Mode: Dados
+    View: Apresentação visual
+    Controller: o controlador dos dois, onde está a regra do negócio
+
+php
+
+    http://php.net/manual/pt_BR/
+
+Pastas > conteúdo
+
+    inc > includes. São coisas que serão reaproveitadas em diversas partes do código

@@ -1,0 +1,20 @@
+Esta sobra de código do início do php.
+
+<?php
+
+require_once("inc/configuration.php"); //solicita um arquivo uma vez
+
+$sql = new Sql(); // tradução: faça uma cópia desse código e utilize aqui. Este Sql() é uma classe
+
+$result = $sql->query("SELECT * FROM tb_produtos;");//lá no sql: new Sql + 2 cliques no bd + código + ctrl+enter
+
+while($row = mysqli_fetch_array($result)){
+
+    var_dump($row);
+} 
+//while($row = mysqli_fetch_array($result)){  >  enquanto encontrar registros, faça! mysqli_fetch_array: pegue o resultado que veio do banco e transforme em um array
+//var_dump($row); mostra os dados: var_dump mostra além dos dados em si, a estrutura deles: inteiros, string, etc.
+//o var_dump vai ser repetido enquanto (while) houver resultados
+exit;
+
+?>

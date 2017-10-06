@@ -1,0 +1,1 @@
+Nesta pasta estão os arquivos que eu acompanhei a feitura. Não acompanhei a parte de responsividade.

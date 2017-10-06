@@ -1,0 +1,697 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+
+header {
+width: 100%;
+height: 150px;
+background-color: rgba(91, 41, 154, .8);
+z-index: 2;
+position: relative;
+
+}
+header .container {
+    position: relative;
+}
+
+header .header-black {
+    background: #000;
+    height: 40px;
+}
+
+header .header-black li {
+    background-image: url("../img/clubs.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 4px;   
+}
+
+    header .header-black li.club-01 {
+    background-position: 0px 0px;
+}
+    header .header-black li.club-02 {
+    background-position: -47px 0px;
+}
+    header .header-black li.club-03 {
+    background-position: -94px 0px;
+}
+    header .header-black li.club-04 {
+    background-position: -141px 0px;
+}
+    header .header-black li.club-05 {
+    background-position: -190px 0px;
+}
+    header .header-black li.club-06 {
+    background-position: -240px 0px;
+}
+    header .header-black li.club-07 {
+    background-position: -287px 0px;
+}
+    header .header-black li.club-08 {
+    background-position: -334px 0px;
+}
+    header .header-black li.club-09 {
+    background-position: -381px 0px;
+}
+    header .header-black li.club-10 {
+    background-position: -428px 0px;
+}
+    header .header-black li.club-11 {
+    background-position: -475px 0px;
+}
+    header .header-black li.club-12 {
+    background-position: -528px 0px;
+}
+    header .header-black li.club-13 {
+    background-position: -577px 0px;
+}
+    header .header-black li.club-14 {
+    background-position: -626px 0px;
+}
+    header .header-black li.club-15 {
+    background-position: -675px 0px;
+}
+    header .header-black li.club-16 {
+    background-position: -722px 0px;
+}
+    header .header-black li.club-17 {
+    background-position: -767px 0px;
+}
+    header .header-black li.club-18 {
+    background-position: -804px 0px;
+}
+    header .header-black li.club-19 {
+    background-position: -851px 0px;
+}
+    header .header-black li.club-20 {
+    background-position: -898px 0px;
+}
+    header .header-black li.club-21 {
+    background-position: -945px 0px;
+}
+    header .header-black li.club-22 {
+    background-position: -1000px 0px;
+}
+
+header .header-black li a {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+header #logotipo {
+    position: absolute;
+    top: 20px;
+    z-index: 3;    
+}
+
+#banner h1.efeito{
+    color:red;
+    font-size:12em;
+}
+
+/* ul.float-right {
+    position: absolute;
+    right: 0px;
+} */
+
+/* este coloquei para aceitar o display block. Não tem no do curso */
+/* header row-menu {
+display: block;
+} */
+
+#menu {
+    margin: 12px 0;
+}
+#menu li {
+    display: inline-block;    
+    font-family: "OpenSans";
+    /* margin: 0px 15px; */
+}
+
+#menu li.search {
+    width: 182px;
+    transition-timing-function: cubic-bezier(1,-.91,.91,1); /* define uma velocidade para a transição*/
+    transition-duration: 1s;
+}
+#menu li.search.ativo {
+    width: 300px;
+}
+
+#menu li.search input{
+    background-color: #5C2D90;
+    color: #fff;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+#menu li.search.ativo input{
+    width: 300px;
+}
+
+
+#menu li.search ::-webkit-input-placeholder {
+    color: #fff;
+    background: none;
+}
+
+#menu li.search button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 3px;
+}
+
+#menu li.search button i {    
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+}
+
+#menu li a {
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 25px;
+	font-weight: bold;
+}
+
+#menu li.search .input-group{
+    margin-top: 8px;
+}
+
+
+#banner {
+    width: 100%;
+    height: 728px;
+    position: relative;
+    background: url("../img/banner.jpg") no-repeat;
+    background-position: 0px -100px;
+    top: -130px;
+}
+
+#banner h1 {
+    transition: 1s;
+    color: #fff;
+    top: 300px;
+    position: relative;
+    font-size: 92px;
+    text-shadow: 2px 2px rgba(0, 0, 0, .45);
+    font-family: 'OpenSans-Light';    
+    margin-left: 50px;
+
+}
+
+/* essas configurações se aplicam à classe efeito, que é acionada pelo jQuery ao passar o mouse "mouseover" no logotipo */
+
+
+#banner h1 small {
+    color: #FFF;
+    font-size: 32px;
+    display: block;
+    font-family: 'OpenSans';
+    font-weight: bold;
+}
+
+#news {
+    position: relative;
+    top: -110px;
+}
+
+#news h2 {
+    width: 100%;
+    color: #5E2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#news hr {
+    border: #FDE192 solid 8px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#news .thumbnails {
+    margin-top: 20px;
+}
+
+#news .thumbnails h3 {
+    color: #5E299A;
+    font-size: 18px;
+    font-family: 'OpenSans';
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#news .thumbnails time {
+    color: #A7A7A7;
+    font-size: 18px;
+    font-family: 'OpenSans';
+}
+
+#news .thumbnails .item-inner {
+    padding: 10px;
+}
+
+#news .thumbnails .item-inner img {
+    width: 100%;
+}
+
+#estatisticas {
+    width: 100%;
+    height: 200px;
+    background-color: #5E2799;
+
+}
+
+#estatisticas p {
+    font-family: 'OpenSans-Light';
+    font-size: 64px;
+    color: #FDE192;
+    text-align: center;
+    margin-top: 30px;
+}
+#estatisticas p small {
+    font-size: 24px;
+    color: #FFF;
+    text-transform: uppercase;
+   display: block;
+}
+#call-to-action {
+    text-align: center;
+    margin-top: 105px;
+    /* display: block; */
+}
+
+/* este não tem no código do curso. serve para fixar o tamanho do vídeo */
+#call-to-action .row {
+    display: block;   
+    margin-top: 25px;
+}
+
+/* este não tem no código do curso */
+#volume {
+    width: 100%;
+}
+
+#call-to-action h2 {
+    width: 100%;
+    color: #5E2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-align: center;
+
+}
+
+#call-to-action hr {
+    border: #FDE192 solid 8px;
+    width: 200px;
+    margin: 0 auto;
+}
+/* revisado e conferido com o do curso até aqui */
+#call-to-action p {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #656565;
+}
+
+#call-to-action .btn {
+    min-width: 164px;
+    height: 50px;
+    line-height: 34px;
+    border-radius: 0;
+}
+
+#call-to-action .btn-roxo {
+    color: #fff;
+    background-color: #5E299A;
+    border-color: #5E299A;
+    margin-right: 50px;    
+}
+
+#call-to-action .btn-amarelo {
+    color: #000;
+    background-color: #FDE192;
+    border-color: #FDE192;
+    /* margin-left: 30px; */
+}
+
+#call-to-action .row-max-400 {
+    margin: 0 auto;
+    max-width: 400px;
+    display: inline-flex;    
+}
+
+footer .row p {
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+footer .row-cinza-claro {
+    margin-top: 110px;
+    background-color: #171F26;    
+    height: 200px;   
+}
+
+footer .row-cinza-escuro {
+    height: 60px;
+    background-color: #11171D;
+    border-top: #242D37 1p solid;    
+}
+
+footer .pull-left {
+    font-family: 'OpenSans';
+    color: #666;
+    font-size: 14px;
+}
+
+footer .text-roxo {
+    color: #623291;
+    font-family: 'OpenSans';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .logotipo {
+    margin-top: 28px;    
+}
+
+footer .col-links h4,
+footer .col-get-in-touch h4,
+footer .col-popular-post h4 {
+    margin-top: 40px;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    color: #FFF;
+    padding-bottom: 17PX;
+    border-bottom: #242D37 1px solid;
+
+}
+
+footer .row-cols h5 {
+    color: #666;
+    font-family: Arial;
+    font-size: 14px;    
+}
+
+footer .row-cols time {
+    color: #FDE092;
+    font-family: Arial;
+    font-size: 16px;
+}
+footer .col-links a {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+footer .col-links .fa {
+    margin: 0 9px;
+
+}
+
+footer .col-get-in-touch address {
+    color:#666;
+    font-family: Arial;
+    font-size: 14px;    
+    margin-bottom: 10px;
+}
+
+footer .col-get-in-touch i {
+    color: #9B9B9B;
+    font-size: 20px;    
+}
+
+footer .col-get-in-touch address span {
+    display: inline-block;
+}
+
+footer .col-get-in-touch address li {
+    color: #9B9B9B;
+    font-size: 20px;
+    margin: 0 6px;
+}
+
+footer .col-get-in-touch li {
+    color: #9B9B9B;
+    font-size: 20px;
+    margin: 0 6px;
+}
+
+footer .col-get-in-touch p {
+    line-height: 20px;
+}
+footer .col-get-in-touch a {
+    color: #9B9B9B;
+}
+
+footer .list-socials {
+    margin-top: 4px;
+  
+}
+
+footer .list-socials a {
+    display: block;
+    border: #9B9B9B 1px solid;
+    width: 26px;
+    height: 26px;
+    line-height: 28px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+footer .list-socials li {
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px 8px;
+    
+}
+
+video {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+/* SHOP */
+
+.text-arial-cinza {
+    font-family: arial;
+    font-size: 12px;
+    color: #666;
+}
+
+.text-roxo {
+    color: #6e3ea4;
+}
+
+#destaque-produtos-container {
+    position: relative;
+    margin-top: 40px;
+    
+}
+/* Dicas do João - aula 66 */
+.destaque-produtos .owl-nav {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.destaque-produtos .owl-prev {
+    margin: 5px;
+    padding: 4px 7px;
+    background-color: rgba(94,41,154, 0.80);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;    
+}
+.destaque-produtos .owl-next {
+    margin: 5px;
+    padding: 4px 7px;
+    background-color: rgba(94,41,154, 0.80);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;    
+}
+
+.owl-carousel .owl-item img {
+    display: inline-block;
+    width: 50%;
+}
+
+/* FIM das dicas do João */
+
+/* só colocando assim para exibir o carousel. caso contrário ficava display: none */
+/* .owl-carousel {
+    display: block;
+} */
+
+/* este não tem no do prof. coloquei para manter imagem e descrição na mesma linha */
+.destaque-produtos .item {
+    width: 100%;
+    display: inline-flex;
+}
+
+.destaque-produtos .col-imagem {
+	text-align: center;
+}
+
+.destaque-produtos .col-descricao h2 {
+    font-family: arial;
+    font-size: 20px;
+    color: #666;
+}
+.destaque-produtos .col-descricao .box-valor {
+    width: 100%
+    position: relative;
+}
+
+.destaque-produtos .col-descricao .box-valor .text-reais {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 63px; /* do prof é 34 */
+    left: 40px;
+}
+
+.destaque-produtos .col-descricao .box-valor .text-valor {
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    left: 65px;
+}
+
+.destaque-produtos .col-descricao .box-valor .text-valor-centavos {
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: 185px;
+}
+
+.destaque-produtos .col-descricao .btn-comprar {
+    font-size: 26px;
+}
+
+.destaque-produtos .col-descricao .btn-comprar .fa {
+    font-size: 26px;
+}
+
+#promocoes {
+    margin-top: 50px;
+}
+
+#promocoes .box-promocao {
+    background-color: #6e3ea4;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    
+    
+}
+
+#promocoes .box-promocao.box-1 {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px;
+
+}
+
+#promocoes .box-1 .box-promocao p {
+    position: absolute;
+    margin-top: 58px;
+    text-align: center;
+    margin-left: 3px;
+    
+}
+#promocoes .row-fluid {
+    display: -webkit-box;
+}
+
+#promocoes .box-promocao .text-ate {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+#promocoes .box-promocao .text-numero {
+    font-size: 126px;
+    font-family: 'OpenSans-Light';
+    position: absolute;
+    top: -10px;
+    left: 12px;
+}
+#promocoes .box-promocao .text-porcento {
+    font-size: 64px;
+    font-family: 'OpenSans-Light';
+    position: absolute;
+    right: 1px;
+    top: -15;
+}
+#promocoes .box-promocao .text-off {
+    font-size: 42px;
+    font-family: 'OpenSans-Light';
+    position: absolute;
+    top: 78px;
+    left: 147px;
+}
+
+#mais-buscados .container {
+    top: 30px;
+}
+
+.text-produto-info a {
+    text-decoration: none;
+}
+
+.box-produto-info h3 {
+    font-size: 12px;
+    font-family: arial;
+    color: #666;
+}
+
+.box-produto-info .produto-img {
+    width: 100%;
+}
+.box-produto-info .text-valor {
+    font-size: 26px;
+    font-weight: bold;
+}
+.title-default-roxo h2 {
+    color: #5e2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-default-roxo hr {
+    border: #FDE192 solid 8px;
+    width: 200px;
+    margin: 0 auto;
+}
+.box-produto-info .text-qtd-valor {
+    font-size: 26px;
+    font-weight: bold;
+
+}
+.box-produto-info .text-qtd-parcelado {
+
+}
